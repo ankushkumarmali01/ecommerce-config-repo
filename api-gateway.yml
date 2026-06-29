@@ -11,10 +11,10 @@ spring:
         webmvc:
 
           routes:
-            - id: user-service
-              uri: lb://USER-SERVICE
+            - id: google
+              uri: https://www.google.com
               predicates:
-                - Path=/api/v1/users/**
+                - Path=/google
 
 management:
   endpoints:
